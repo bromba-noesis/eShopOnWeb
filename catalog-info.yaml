@@ -1,0 +1,12 @@
+# Example catalog-info.yaml entity definition file
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: eShopOnWeb
+    annotations:
+        gitlab.com/project-id: '53922015' #1234. This must be in quotes and can be found under Settings --> General
+        gitlab.com/project-slug: 'noesis-devops/eShopOnWeb' # group_name/project_name
+spec:
+    type: service
+    lifecycle: experimental
+    owner: KirolBet

@@ -1,0 +1,23 @@
+# eshopwebmvc-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eshopwebmvc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eshopwebmvc
+  template:
+    metadata:
+      labels:
+        app: eshopwebmvc
+    spec:
+      containers:
+      - name: eshopwebmvc
+        image: registry.gitlab.com/noesis-devops/eshoponweb/noesis-devops-eshoponweb-mvc:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: registry-credentials
+      # Add other configurations like environment variables, volumes, etc. if needed

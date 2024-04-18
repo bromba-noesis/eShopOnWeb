@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-18T11:42:20.572377" rpa="false" schemaversion="5">
+<suite id="s1" name="Rpa" source="C:\Users\david.pacios\Documents\eShopOnWeb\tests\RPA\rpa.robot">
+<test id="s1-t1" name="CP001 - Inicio de sesión en eShopOnWeb con credenciales no válidas" line="9">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:20.917921" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:20.917387" elapsed="2.917405"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:42:23.834792" elapsed="0.124464"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:42:23.959256" elapsed="0.243458"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:24.202769" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:24.202769" elapsed="1.232517"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:20.917203" elapsed="4.518083"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:25.435286" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:25.435286" elapsed="0.279298"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:25.435286" elapsed="0.279298"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:25.715586" level="INFO">Typing text 'demousermicrosoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:25.715586" elapsed="0.129734"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:25.845320" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:42:25.880597" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:25.845320" elapsed="0.090886"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:25.936206" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:25.936206" elapsed="0.050856"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:25.988375" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:25.988071" elapsed="0.056587"/>
+</kw>
+<arg>demousermicrosoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:42:25.715586" elapsed="0.329072"/>
+</kw>
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:26.045665" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:26.045665" elapsed="2.889530"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:42:28.935195" elapsed="0.124474"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:42:29.059669" elapsed="0.435819"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:29.495488" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:29.495488" elapsed="0.841784"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:26.045665" elapsed="4.292111"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:30.338780" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:30.337776" elapsed="0.295445"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:30.337776" elapsed="0.295445"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:30.634958" level="INFO">Typing text 'admin@microsoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:30.634958" elapsed="0.121276"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:30.757110" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:42:30.790328" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:30.756990" elapsed="0.082628"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:30.840062" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:30.840062" elapsed="0.056356"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:30.896925" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:30.896418" elapsed="0.302172"/>
+</kw>
+<arg>admin@microsoft.com</arg>
+<arg>pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:42:30.634038" elapsed="0.564552"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:20.915621" elapsed="10.283931"/>
+</test>
+<test id="s1-t2" name="CP002 - Inicio de sesión en eShopOnWeb con credenciales válidas" line="17">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:31.201876" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:31.200875" elapsed="2.991258"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:42:34.192133" elapsed="0.129259"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:42:34.321392" elapsed="0.246655"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:34.568047" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:34.568047" elapsed="0.807127"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:31.200875" elapsed="4.174299"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:35.376174" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:35.376174" elapsed="0.340733"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:35.375174" elapsed="0.341733"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:35.718924" level="INFO">Typing text 'demouser@microsoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:35.718924" elapsed="0.108141"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:35.827065" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:42:35.859293" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:35.827065" elapsed="0.082552"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:35.909617" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:35.909617" elapsed="0.048095"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:35.966866" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:35.957712" elapsed="0.471848"/>
+</kw>
+<arg>demouser@microsoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:42:35.717919" elapsed="0.711641"/>
+</kw>
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:36.430561" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:36.430561" elapsed="3.351238"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:42:39.781799" elapsed="0.230682"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:42:40.013020" elapsed="0.484142"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:40.497162" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:40.497162" elapsed="1.013676"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:36.429560" elapsed="5.081278"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:41.510838" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:41.510838" elapsed="0.379031"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:41.510838" elapsed="0.380034"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:41.891872" level="INFO">Typing text 'admin@microsoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:41.891872" elapsed="0.187564"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:42.079436" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:42:42.127887" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:42.079436" elapsed="0.114023"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:42.193459" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:42.193459" elapsed="0.069173"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:42.262632" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:42.262632" elapsed="0.493628"/>
+</kw>
+<arg>admin@microsoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:42:41.890872" elapsed="0.866387"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:31.199863" elapsed="11.558419"/>
+</test>
+<test id="s1-t3" name="CP003 - Comprar X unidades de un producto sin tener la sesión iniciada" line="25">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:42.762679" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:42.761689" elapsed="3.462998"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:42:46.224687" elapsed="0.133393"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:42:46.359101" elapsed="0.254564"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:46.615201" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:46.613665" elapsed="1.243638"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:42.759251" elapsed="5.098052"/>
+</kw>
+<kw name="Add_Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:47.857303" level="INFO">Clicking button 'css=input.esh-catalog-button[type='submit']'.</msg>
+<arg>${add_product_component}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:47.857303" elapsed="0.515795"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:48.373750" level="INFO">Typing text '4' into text field 'css=input.esh-basket-input[type='number']'.</msg>
+<arg>css=input.esh-basket-input[type='number']</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:48.373750" elapsed="0.133951"/>
+</kw>
+<kw name="Update">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:48.509093" level="INFO">Clicking button 'xpath=//button[contains(@class, 'esh-basket-checkout') and contains(text(), 'Update')]'.</msg>
+<arg>xpath=//button[contains(@class, 'esh-basket-checkout') and contains(text(), 'Update')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:48.509093" elapsed="0.332922"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:48.508084" elapsed="0.333931"/>
+</kw>
+<arg>css=input.esh-catalog-button[type='submit']</arg>
+<arg>4</arg>
+<status status="PASS" start="2024-04-18T11:42:47.857303" elapsed="0.984712"/>
+</kw>
+<kw name="Checkout">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:48.842015" level="INFO">Clicking link 'xpath=//a[contains(@class, 'esh-basket-checkout') and contains(text(), 'Checkout')]'.</msg>
+<arg>xpath=//a[contains(@class, 'esh-basket-checkout') and contains(text(), 'Checkout')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:48.842015" elapsed="0.411497"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:48.842015" elapsed="0.411497"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:42.759251" elapsed="6.494261"/>
+</test>
+<test id="s1-t4" name="CP004 - Comprar X unidades de un producto filtrando por la marca Y teniendo que iniciar sesion" line="30">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:49.254410" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:49.254410" elapsed="3.497763"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:42:52.752173" elapsed="0.135834"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:42:52.888007" elapsed="0.282741"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:53.170748" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:53.170748" elapsed="1.086246"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:49.254410" elapsed="5.002584"/>
+</kw>
+<kw name="Filter">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:54.258321" level="INFO">Selecting options from selection list 'id=CatalogModel_BrandFilterApplied' by value 2.</msg>
+<arg>id=CatalogModel_BrandFilterApplied</arg>
+<arg>${brand}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-18T11:42:54.258321" elapsed="0.132197"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:54.391229" level="INFO">Clicking button 'css=.esh-catalog-send'.</msg>
+<arg>css=.esh-catalog-send</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:54.390518" elapsed="0.340581"/>
+</kw>
+<arg>2</arg>
+<status status="PASS" start="2024-04-18T11:42:54.258321" elapsed="0.472778"/>
+</kw>
+<kw name="Add_Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:54.731099" level="INFO">Clicking button 'css=input.esh-catalog-button[type='submit']'.</msg>
+<arg>${add_product_component}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:54.731099" elapsed="0.366028"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:55.097127" level="INFO">Typing text '4' into text field 'css=input.esh-basket-input[type='number']'.</msg>
+<arg>css=input.esh-basket-input[type='number']</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:55.097127" elapsed="0.262957"/>
+</kw>
+<kw name="Update">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:55.360084" level="INFO">Clicking button 'xpath=//button[contains(@class, 'esh-basket-checkout') and contains(text(), 'Update')]'.</msg>
+<arg>xpath=//button[contains(@class, 'esh-basket-checkout') and contains(text(), 'Update')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:55.360084" elapsed="0.349300"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:55.360084" elapsed="0.349300"/>
+</kw>
+<arg>css=input.esh-catalog-button[type='submit']</arg>
+<arg>4</arg>
+<status status="PASS" start="2024-04-18T11:42:54.731099" elapsed="0.978285"/>
+</kw>
+<kw name="Checkout">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:55.711033" level="INFO">Clicking link 'xpath=//a[contains(@class, 'esh-basket-checkout') and contains(text(), 'Checkout')]'.</msg>
+<arg>xpath=//a[contains(@class, 'esh-basket-checkout') and contains(text(), 'Checkout')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:55.711033" elapsed="0.426356"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:55.709384" elapsed="0.428005"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:56.140444" level="INFO">Typing text 'admin@microsoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:56.140444" elapsed="0.137612"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:56.278242" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:42:56.308932" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:56.278242" elapsed="0.098705"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:56.376947" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:56.376947" elapsed="0.066499"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:56.443446" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:56.443446" elapsed="0.485422"/>
+</kw>
+<arg>admin@microsoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:42:56.139431" elapsed="0.789437"/>
+</kw>
+<kw name="Pay">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:56.929679" level="INFO">Clicking button 'xpath=//input[@type='submit' and contains(@class, 'esh-basket-checkout') and @value='[ Pay Now ]']'.</msg>
+<arg>xpath=//input[@type='submit' and contains(@class, 'esh-basket-checkout') and @value='[ Pay Now ]']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:42:56.929679" elapsed="0.436714"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:56.929679" elapsed="0.437222"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:49.254410" elapsed="8.112491"/>
+</test>
+<test id="s1-t5" name="CP005 - Comprar X unidades de Z productos filtrando por la marca Y teniendo que iniciar sesion" line="38">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:42:57.368849" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:42:57.368849" elapsed="3.481231"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:43:00.850080" elapsed="0.133306"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:43:00.983982" elapsed="0.263326"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:01.247308" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:01.247308" elapsed="1.384811"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:42:57.368849" elapsed="5.263270"/>
+</kw>
+<kw name="Filter">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:02.633115" level="INFO">Selecting options from selection list 'id=CatalogModel_BrandFilterApplied' by value 2.</msg>
+<arg>id=CatalogModel_BrandFilterApplied</arg>
+<arg>${brand}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-18T11:43:02.633115" elapsed="0.105415"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:02.738530" level="INFO">Clicking button 'css=.esh-catalog-send'.</msg>
+<arg>css=.esh-catalog-send</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:02.738530" elapsed="0.328889"/>
+</kw>
+<arg>2</arg>
+<status status="PASS" start="2024-04-18T11:43:02.633115" elapsed="0.435315"/>
+</kw>
+<kw name="Add_Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:03.069430" level="INFO">Clicking button 'css=input.esh-catalog-button[type='submit']'.</msg>
+<arg>${add_product_component}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:03.069430" elapsed="0.419643"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:03.489073" level="INFO">Typing text '4' into text field 'css=input.esh-basket-input[type='number']'.</msg>
+<arg>css=input.esh-basket-input[type='number']</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:03.489073" elapsed="0.112020"/>
+</kw>
+<kw name="Update">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:03.601093" level="INFO">Clicking button 'xpath=//button[contains(@class, 'esh-basket-checkout') and contains(text(), 'Update')]'.</msg>
+<arg>xpath=//button[contains(@class, 'esh-basket-checkout') and contains(text(), 'Update')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:03.601093" elapsed="0.269751"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:43:03.601093" elapsed="0.269751"/>
+</kw>
+<arg>css=input.esh-catalog-button[type='submit']</arg>
+<arg>4</arg>
+<status status="PASS" start="2024-04-18T11:43:03.068430" elapsed="0.802414"/>
+</kw>
+<kw name="Continue_Shopping">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:03.870844" level="INFO">Clicking link 'xpath=//a[contains(@class, 'esh-basket-checkout') and contains(text(), 'Continue Shopping')]'.</msg>
+<msg time="2024-04-18T11:43:05.421577" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-18T11:43:05.421577" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn esh-basket-checkout text-white" href="/"&gt;...&lt;/a&gt; is not clickable at point (834, 944). Other element would receive the click: &lt;button class="btn esh-basket-checkout" name="updatebutton" value="" type="submit" formaction="/Basket/Update"&gt;...&lt;/button&gt;
+  (Session info: chrome=123.0.6312.123)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E5107032+63090]
+	(No symbol) [0x00007FF6E5072C82]
+	(No symbol) [0x00007FF6E4F0EC65]
+	(No symbol) [0x00007FF6E4F5BB34]
+	(No symbol) [0x00007FF6E4F59954]
+	(No symbol) [0x00007FF6E4F57164]
+	(No symbol) [0x00007FF6E4F55EF9]
+	(No symbol) [0x00007FF6E4F4A708]
+	(No symbol) [0x00007FF6E4F76FDA]
+	(No symbol) [0x00007FF6E4F4A00A]
+	(No symbol) [0x00007FF6E4F771F0]
+	(No symbol) [0x00007FF6E4F93412]
+	(No symbol) [0x00007FF6E4F76D83]
+	(No symbol) [0x00007FF6E4F483A8]
+	(No symbol) [0x00007FF6E4F49441]
+	GetHandleVerifier [0x00007FF6E55025AD+4238317]
+	GetHandleVerifier [0x00007FF6E553F70D+4488525]
+	GetHandleVerifier [0x00007FF6E55379EF+4456495]
+	GetHandleVerifier [0x00007FF6E51E0576+953270]
+	(No symbol) [0x00007FF6E507E54F]
+	(No symbol) [0x00007FF6E5079224]
+	(No symbol) [0x00007FF6E507935B]
+	(No symbol) [0x00007FF6E5069B94]
+	BaseThreadInitThunk [0x00007FFA9120257D+29]
+	RtlUserThreadStart [0x00007FFA921AAA48+40]
+</msg>
+<arg>xpath=//a[contains(@class, 'esh-basket-checkout') and contains(text(), 'Continue Shopping')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-18T11:43:03.870844" elapsed="1.566330">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn esh-basket-checkout text-white" href="/"&gt;...&lt;/a&gt; is not clickable at point (834, 944). Other element would receive the click: &lt;button class="btn esh-basket-checkout" name="updatebutton" value="" type="submit" formaction="/Basket/Update"&gt;...&lt;/button&gt;
+  (Session info: chrome=123.0.6312.123)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E5107032+63090]
+	(No symbol) [0x00007FF6E5072C82]
+	(No symbol) [0x00007FF6E4F0EC65]
+	(No symbol) [0x00007FF6E4F5BB34]
+	(No symbol) [0x00007FF6E4F59954]
+	(No symbol) [0x00007FF6E4F57164]
+	(No symbol) [0x00007FF6E4F55EF9]
+	(No symbol) [0x00007FF6E4F4A708]
+	(No symbol) [0x00007FF6E4F76FDA]
+	(No symbol) [0x00007FF6E4F4A00A]
+	(No symbol) [0x00007FF6E4F771F0]
+	(No symbol) [0x00007FF6E4F93412]
+	(No symbol) [0x00007FF6E4F76D83]
+	(No symbol) [0x00007FF6E4F483A8]
+	(No symbol) [0x00007FF6E4F49441]
+	GetHandleVerifier [0x00007FF6E55025AD+4238317]
+	GetHandleVerifier [0x00007FF6E553F70D+4488525]
+	GetHandleVerifier [0x00007FF6E55379EF+4456495]
+	GetHandleVerifier [0x00007FF6E51E0576+953270]
+	(No symbol) [0x00007FF6E507E54F]
+	(No symbol) [0x00007FF6E5079224]
+	(No symbol) [0x00007FF6E507935B]
+	(No symbol) [0x00007FF6E5069B94]
+	BaseThreadInitThunk [0x00007FFA9120257D+29]
+	RtlUserThreadStart [0x00007FFA921AAA48+40]
+</status>
+</kw>
+<status status="FAIL" start="2024-04-18T11:43:03.870844" elapsed="1.566330">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn esh-basket-checkout text-white" href="/"&gt;...&lt;/a&gt; is not clickable at point (834, 944). Other element would receive the click: &lt;button class="btn esh-basket-checkout" name="updatebutton" value="" type="submit" formaction="/Basket/Update"&gt;...&lt;/button&gt;
+  (Session info: chrome=123.0.6312.123)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E5107032+63090]
+	(No symbol) [0x00007FF6E5072C82]
+	(No symbol) [0x00007FF6E4F0EC65]
+	(No symbol) [0x00007FF6E4F5BB34]
+	(No symbol) [0x00007FF6E4F59954]
+	(No symbol) [0x00007FF6E4F57164]
+	(No symbol) [0x00007FF6E4F55EF9]
+	(No symbol) [0x00007FF6E4F4A708]
+	(No symbol) [0x00007FF6E4F76FDA]
+	(No symbol) [0x00007FF6E4F4A00A]
+	(No symbol) [0x00007FF6E4F771F0]
+	(No symbol) [0x00007FF6E4F93412]
+	(No symbol) [0x00007FF6E4F76D83]
+	(No symbol) [0x00007FF6E4F483A8]
+	(No symbol) [0x00007FF6E4F49441]
+	GetHandleVerifier [0x00007FF6E55025AD+4238317]
+	GetHandleVerifier [0x00007FF6E553F70D+4488525]
+	GetHandleVerifier [0x00007FF6E55379EF+4456495]
+	GetHandleVerifier [0x00007FF6E51E0576+953270]
+	(No symbol) [0x00007FF6E507E54F]
+	(No symbol) [0x00007FF6E5079224]
+	(No symbol) [0x00007FF6E507935B]
+	(No symbol) [0x00007FF6E5069B94]
+	BaseThreadInitThunk [0x00007FFA9120257D+29]
+	RtlUserThreadStart [0x00007FFA921AAA48+40]
+</status>
+</kw>
+<kw name="Filter">
+<arg>3</arg>
+<status status="NOT RUN" start="2024-04-18T11:43:05.437174" elapsed="0.000000"/>
+</kw>
+<kw name="Add_Product">
+<arg>css=input.esh-catalog-button[type='submit']</arg>
+<arg>4</arg>
+<status status="NOT RUN" start="2024-04-18T11:43:05.437174" elapsed="0.000000"/>
+</kw>
+<kw name="Checkout">
+<status status="NOT RUN" start="2024-04-18T11:43:05.441706" elapsed="0.000000"/>
+</kw>
+<kw name="Login">
+<arg>admin@microsoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="NOT RUN" start="2024-04-18T11:43:05.441706" elapsed="0.000000"/>
+</kw>
+<kw name="Pay">
+<status status="NOT RUN" start="2024-04-18T11:43:05.441706" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-18T11:42:57.366901" elapsed="8.075928">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn esh-basket-checkout text-white" href="/"&gt;...&lt;/a&gt; is not clickable at point (834, 944). Other element would receive the click: &lt;button class="btn esh-basket-checkout" name="updatebutton" value="" type="submit" formaction="/Basket/Update"&gt;...&lt;/button&gt;
+  (Session info: chrome=123.0.6312.123)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E5107032+63090]
+	(No symbol) [0x00007FF6E5072C82]
+	(No symbol) [0x00007FF6E4F0EC65]
+	(No symbol) [0x00007FF6E4F5BB34]
+	(No symbol) [0x00007FF6E4F59954]
+	(No symbol) [0x00007FF6E4F57164]
+	(No symbol) [0x00007FF6E4F55EF9]
+	(No symbol) [0x00007FF6E4F4A708]
+	(No symbol) [0x00007FF6E4F76FDA]
+	(No symbol) [0x00007FF6E4F4A00A]
+	(No symbol) [0x00007FF6E4F771F0]
+	(No symbol) [0x00007FF6E4F93412]
+	(No symbol) [0x00007FF6E4F76D83]
+	(No symbol) [0x00007FF6E4F483A8]
+	(No symbol) [0x00007FF6E4F49441]
+	GetHandleVerifier [0x00007FF6E55025AD+4238317]
+	GetHandleVerifier [0x00007FF6E553F70D+4488525]
+	GetHandleVerifier [0x00007FF6E55379EF+4456495]
+	GetHandleVerifier [0x00007FF6E51E0576+953270]
+	(No symbol) [0x00007FF6E507E54F]
+	(No symbol) [0x00007FF6E5079224]
+	(No symbol) [0x00007FF6E507935B]
+	(No symbol) [0x00007FF6E5069B94]
+	BaseThreadInitThunk [0x00007FFA9120257D+29]
+	RtlUserThreadStart [0x00007FFA921AAA48+40]
+</status>
+</test>
+<test id="s1-t6" name="CP006 - Cerrar sesión teniendo la sesión iniciada" line="49">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:05.444088" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:43:05.444088" elapsed="3.163113"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:43:08.607201" elapsed="0.195940"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:43:08.803141" elapsed="0.467997"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:09.271138" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:09.271138" elapsed="0.909076"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:43:05.444088" elapsed="4.736126"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:10.181299" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:10.181299" elapsed="0.362329"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:43:10.180214" elapsed="0.363414"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:10.543628" level="INFO">Typing text 'demouser@microsoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:10.543628" elapsed="0.198755"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:10.742383" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:43:10.791567" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:10.742383" elapsed="0.134858"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:10.877241" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:10.877241" elapsed="0.085399"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:10.962640" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:10.962640" elapsed="0.503049"/>
+</kw>
+<arg>demouser@microsoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:43:10.543628" elapsed="0.922061"/>
+</kw>
+<kw name="Logout">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:11.468213" level="INFO">Simulating Mouse Over on element 'css=.esh-identity-section'.</msg>
+<arg>css=.esh-identity-section</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:11.467200" elapsed="0.303365"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:43:11.770565" level="INFO">Clicking element 'xpath=//section[@class='esh-identity-drop']//a[last()]'.</msg>
+<arg>xpath=//section[@class='esh-identity-drop']//a[last()]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:43:11.770565" elapsed="0.416486"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:43:11.467200" elapsed="0.719851"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:43:05.444088" elapsed="6.744089"/>
+</test>
+<status status="FAIL" start="2024-04-18T11:42:20.574379" elapsed="51.615810"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="Rpa">Rpa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

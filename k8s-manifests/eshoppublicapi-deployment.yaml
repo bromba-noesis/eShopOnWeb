@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eshoppublicapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eshoppublicapi
+  template:
+    metadata:
+      labels:
+        app: eshoppublicapi
+    spec:
+      containers:
+      - name: eshoppublicapi
+        image: registry.gitlab.com/noesis-devops/eshoponweb/noesis-devops-eshoponweb-publicapi:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: registry-credentials

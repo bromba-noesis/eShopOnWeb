@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-18T11:28:05.608778" rpa="false" schemaversion="5">
+<suite id="s1" name="eShopOnWeb" source="C:\Users\david.pacios\Documents\eShopOnWeb">
+<suite id="s1-s1" name="Tests" source="C:\Users\david.pacios\Documents\eShopOnWeb\tests">
+<suite id="s1-s1-s1" name="RPA" source="C:\Users\david.pacios\Documents\eShopOnWeb\tests\RPA">
+<suite id="s1-s1-s1-s1" name="Rpa" source="C:\Users\david.pacios\Documents\eShopOnWeb\tests\RPA\rpa.robot">
+<test id="s1-s1-s1-s1-t1" name="CP001 - Inicio de sesión en eShopOnWeb con credenciales no válidas" line="10">
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:06.001022" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:28:06.001022" elapsed="4.164197"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:28:10.165743" elapsed="0.138044"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:28:10.304795" elapsed="0.529166"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:10.834957" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:10.833961" elapsed="0.887186"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:28:06.000021" elapsed="5.721126"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:11.723146" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:11.722147" elapsed="0.295619"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:28:11.722147" elapsed="0.296621"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:12.019764" level="INFO">Typing text 'demousermicrosoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:12.019764" elapsed="0.155997"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:12.178287" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:28:12.216677" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:12.176758" elapsed="0.109757"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:12.286515" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:12.286515" elapsed="0.075616"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:12.362131" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:12.362131" elapsed="0.077014"/>
+</kw>
+<arg>demousermicrosoft.com</arg>
+<arg>Pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:28:12.018768" elapsed="0.420377"/>
+</kw>
+<kw name="Start_Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:12.439145" level="INFO">Opening browser 'Chrome' to base url 'https://emerging-ghastly-urchin.ngrok-free.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T11:28:12.439145" elapsed="5.322228"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T11:28:17.761880" elapsed="0.143049"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T11:28:17.905931" elapsed="0.344257"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:18.253622" level="INFO">Clicking button 'xpath=//button[contains(text(),'Visit Site')]'.</msg>
+<arg>xpath=//button[contains(text(),'Visit Site')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:18.252501" elapsed="1.157005"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:28:12.439145" elapsed="6.970361"/>
+</kw>
+<kw name="Go_Login">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:19.411508" level="INFO">Clicking link 'css=.esh-identity-name.esh-identity-name--upper'.</msg>
+<arg>css=.esh-identity-name.esh-identity-name--upper</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:19.410502" elapsed="0.346424"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:28:19.410502" elapsed="0.346424"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:19.756926" level="INFO">Typing text 'admin@microsoft.com' into text field 'Input_Email'.</msg>
+<arg>Input_Email</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:19.756926" elapsed="0.212659"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:19.969585" level="INFO">Typing password into text field 'Input_Password'.</msg>
+<msg time="2024-04-18T11:28:20.026928" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>Input_Password</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:19.969585" elapsed="0.137149"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:20.106734" level="INFO">Selecting checkbox 'Input_RememberMe'.</msg>
+<arg>Input_RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:20.106734" elapsed="0.084750"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T11:28:20.191484" level="INFO">Clicking button 'css=.btn.btn-default'.</msg>
+<arg>css=.btn.btn-default</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T11:28:20.191484" elapsed="0.355114"/>
+</kw>
+<arg>admin@microsoft.com</arg>
+<arg>pass@word1</arg>
+<status status="PASS" start="2024-04-18T11:28:19.756926" elapsed="0.789672"/>
+</kw>
+<status status="PASS" start="2024-04-18T11:28:05.997858" elapsed="14.548740"/>
+</test>
+<status status="PASS" start="2024-04-18T11:28:05.654546" elapsed="14.902856"/>
+</suite>
+<status status="PASS" start="2024-04-18T11:28:05.650078" elapsed="14.911357"/>
+</suite>
+<status status="PASS" start="2024-04-18T11:28:05.647073" elapsed="14.917366"/>
+</suite>
+<status status="PASS" start="2024-04-18T11:28:05.621102" elapsed="14.947355"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="eShopOnWeb">eShopOnWeb</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">eShopOnWeb.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="RPA">eShopOnWeb.Tests.RPA</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Rpa">eShopOnWeb.Tests.RPA.Rpa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

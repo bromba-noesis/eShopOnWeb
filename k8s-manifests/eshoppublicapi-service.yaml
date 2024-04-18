@@ -1,0 +1,27 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: eshoppublicapi
+# spec:
+#   selector:
+#     app: eshoppublicapi
+#   ports:
+#     - protocol: TCP
+#       port: 80
+#       targetPort: 80
+#       nodePort: 32012
+#   type: NodePort  # Change this line to expose it as NodePort
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: eshoppublicapi
+spec:
+  selector:
+    app: eshoppublicapi
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 32012
+  type: NodePort

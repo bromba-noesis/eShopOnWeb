@@ -1,0 +1,29 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: postgresql
+# spec:
+#   selector:
+#     app: postgresql
+#   ports:
+#     - protocol: TCP
+#       port: 5432
+#       targetPort: 5432
+#       nodePort: 32020
+#   type: NodePort  # Change this line to expose it as NodePort
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mssql-service
+spec:
+  selector:
+    app: mssql
+  ports:
+    - protocol: TCP
+      port: 31433
+      targetPort: 1433
+      nodePort: 32020
+  type: NodePort
+
+
